@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Section</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Kode+Mono:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@300&family=Noto+Naskh+Arabic:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Questrial&family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      * {
+        margin: 0 !important;
+      }
+      .carousel-item img {
+        /* height: 250px; /* Menentukan tinggi gambar */
+        /* width: 500px; */
+        object-fit: cover !important; /* Mengatur proporsi aspek gambar */
+      }
+
+      .carousel-inner {
+        height: 250px; /* Menentukan tinggi Carousel */
+        width: 500px; /* Menentukan lebar Carousel */
+        float: left; /* Mengatur letak Carousel di kanan */
+        margin-bottom: 2% !important;
+        margin-left: 10px !important;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        padding-top: 30px !important; /* Memberi padding atas tombol navigasi */
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: 20px; /* Menentukan lebar ikon navigasi */
+        height: 20px; /* Menentukan tinggi ikon navigasi */
+      }
+
+      .carousel-caption {
+        position: absolute; /* Membuat caption Carousel berposisi absolute */
+        bottom: 0; /* Membuat caption Carousel berada di bawah */
+        left: 0; /* Membuat caption Carousel berada di kiri */
+        right: 0; /* Membuat caption Carousel berada di kanan */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Membuat background caption semi-transparan */
+        color: white; /* Memberi warna tulisan caption putih */
+        padding: 10px; /* Memberi padding pada caption */
+        text-align: center; /* Membuat tulisan di tengah-tengah caption */
+      }
+      /* Custom styles for this template */
+      .news {
+        margin-bottom: 50px;
+      }
+      .news .card {
+        border: none;
+        border-radius: 0;
+        overflow: hidden;
+      }
+      .news .card-img {
+        object-fit: cover;
+        height: 250px;
+      }
+      .p {
+        float: left; /* Mengatur letak Carousel di kanan */
+      }
+      .text {
+        font-family: "DM Serif Display", serif !important;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        margin-right: 30% !important;
+
+        color: #66869c;
+        margin-bottom: 10px !important;
+      }
+      .card-title {
+        font-family: "Prata", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(54, 51, 51);
+      }
+      .card-text {
+        color: #66869c !important;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .beritatext {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .beritatext a {
+        text-decoration: none !important;
+      }
+      .berita {
+        float: left;
+
+        padding-left: 20px; /* Atur jarak kiri dari carousel */
+      }
+      .pem {
+        clear: both; /* Mengatasi float */
+        margin-top: 20px;
+      }
+      .footerrrr {
+        color: #4c5372 !important;
+        text-decoration: none;
+      }
+      .footerrrr:hover {
+        text-decoration: underline;
+      
+      }
+      .fther {
+        color: #4c5372 !important;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .carousel-inner {
+        background-color: #b7cede !important;
+      }
+      .active {
+        color: #a3b1ec !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text">Pesantren News</h1>
+      <div
+        id="carouselExample"
+        class="carousel slide float-right"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.bisnis.com/posts/2023/11/25/1717976/_MG_0017.JPG"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <a
+                href="https://sumatra.bisnis.com/read/20231204/534/1720858/jelajah-umkm-ponpes-jabal-nur-jadi-pesantren-mandiri-berkat-berbagai-lini-usaha-ini"
+                ><img
+                  src="https://via.placeholder.com/50x50"
+                  alt="icon"
+                  width="50"
+                  height="50"
+              /></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.bisnis.com/posts/2023/08/23/1687597/syariah-1_1692789302.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <img
+                src="https://via.placeholder.com/50x50"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.bisnis.com/posts/2023/12/04/1720858/umkm-7_1701694928.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <img
+                src="https://via.placeholder.com/50x50"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="berita">
+        <div class="beritatext">
+          <a
+            href="https://bandung.bisnis.com/read/20230824/549/1687837/tantangan-disrupsi-di-depan-mata-biro-kesra-jabar-ajak-santri-melek-digital"
+          >
+            <h6 style="color: rgb(54, 51, 51)">
+              Biro Kesra Jabar Ajak Santri Melek Digital
+            </h6>
+            <p style="color: #66869c !important">
+              Atas dasar pentingnya santri melek digital, <br />Pemprov Jabar
+              menggelar workshop 'Literasi Digital Pengelola <br />
+              Pesantren dan Lembaga br Keagamaan Lain di Jawa Barat
+            </p>
+          </a>
+        </div>
+        <div class="beritatext">
+          <a
+            href="https://kabar24.bisnis.com/read/20230704/15/1671607/ponpes-al-zaytun-terancam-sanksi-dibubarkan-bagaimana-nasib-santrinya"
+          >
+            <h6 style="color: rgb(54, 51, 51)">
+              Ponpes Al Zaytun Terancam Sanksi Dibubarkan, <br />
+              Bagaimana Nasib Santrinya?
+            </h6>
+            <p style="color: #66869c !important">
+              Pondok Pesantren (Ponpes) Al Zaytun terancam<br />
+              dibubarkan akibat kasus dugaan ajaran sesat, begini nasib
+              santri-santri <br />
+              yang bersekolah di sana.
+              <br />
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- News Section -->
+    <section class="news py-5">
+      <div class="container p">
+        <div class="row">
+          <!-- News Item 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://pict-b.sindonews.net/dyn/732/pena/news/2024/02/15/12/1322277/ht-puskestren-bisa-menjadi-model-pelayanan-kesehatan-untuk-masyarakat-pesantren-cys.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  HT: Puskestren Bisa Menjadi Model Pelayanan Kesehatan untuk
+                  Masyarakat Pesantren
+                </h5>
+                <p class="card-text">
+                  Harapan itu disampaikan Ketua Umum Partai Persatuan Indonesia
+                  (Perindo) Hary Tanoesoedibjo (HT) saat memberikan bantuan
+                  Puskestren kepada Pondok Pesantren Al Islah, Jatireja, Subang,
+                  Jawa Barat, Kamis, 8 Februari 2024. Bantuan tersebut diterima
+                  langsung oleh pendiri ponpes KH Usfuri Anshori.
+                </p>
+                <a
+                  href="https://nasional.sindonews.com/read/1322277/12/ht-puskestren-bisa-menjadi-model-pelayanan-kesehatan-untuk-masyarakat-pesantren-1707987775"
+                  class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- News Item 2 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://images.bisnis.com/posts/2024/02/14/1740872/1-santri_1_1707896981.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Pentingnya Sanitasi, Ribuan Santri Dapat Edukasi Kesehatan di
+                  Ponpes Asshiddiqiyah Jakarta
+                </h5>
+                <p class="card-text">
+                  Ketua Presidium Perhimpunan Dokter Umum Indonesia (PDUI), dr.
+                  Imelda Datau, MM., menyatakan rasa senang dan bangga terkait
+                  program ini yang ada di pesantren-pesantren seluruh Indonesia
+                  karena seperti diketahui bersama bahwa perilaku hidup bersih
+                  dan sehat itu sangat penting terutama di kalangan pesantren.
+                </p>
+                <a
+                  href="https://www.suara.com/pressrelease/2024/02/16/205500/pentingnya-sanitasi-ribuan-santri-dapat-edukasi-kesehatan-di-ponpes-asshiddiqiyah-jakarta"
+                  class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- News Item 3 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://images.bisnis.com/posts/2023/08/25/1688274/img-20230825-wa0005_copy_1000x667_1692938628.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Bank BJB Syariah Dukung Pesantren dan UMKM, Sediakan Mesra
+                  Syariah
+                </h5>
+                <p class="card-text">
+                  Dukungan ini berupa pemberian beasiswa kepada tujuh peserta
+                  magang dari pesantren-pesantren di Sumatra Utara. Direktur
+                  Utama Bank BJB Syariah Adang A. Kunandar menyatakan kemitraan
+                  ini merupakan langkah strategis dalam memperkuat peran
+                  pesantren dalam pengembangan masyarakat. Melalui program ini,
+                  diharapkan pesantren dapat berkontribusi lebih besar dalam
+                  memajukan ekonomi lokal dan meningkatkan kesejahteraan
+                  masyarakat sekitarnya.
+                </p>
+                <a
+                  href="https://bandung.bisnis.com/read/20230825/550/1688274/bank-bjb-syariah-dukung-pesantren-dan-umkm-sediakan-mesra-syariah"
+                  class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pem">
+      <ul class="nav nav-underline nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link footerrrr" aria-current="page" href="halaman.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link footerrrr" href="maps.html">location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active footerrrr" href="#">berita</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link footerrrr" href="aboutus.html">a bout us</a>
+        </li>
+      </ul>
+      <!-- footer -->
+      <footer class="container-fluid">
+        <div class="container-fluid">
+          <div class="col-12 py-4">
+            &copy; website by shakira,marsina,nayya xi rpl 1
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+
+  <body></body>
+</html>
